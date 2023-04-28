@@ -19,7 +19,8 @@ tokenizer = ToktokTokenizer()
 stopword_list = nltk.corpus.stopwords.words('english')
 new_stopwords = ["else", "dtype", "like", 
                  "name", "guy", "reddit", 
-                 "delete", "selftext", "subreddit"]
+                 "delete", "selftext", "subreddit",
+                 "remove", "get"]
 stopword_list.extend(new_stopwords)
 
 
