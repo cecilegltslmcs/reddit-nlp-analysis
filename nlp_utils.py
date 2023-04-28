@@ -17,8 +17,8 @@ nlp = spacy.load('en_core_web_sm')
 #nlp_vec = spacy.load('en_vecs', parse = True, tag=True, #entity=True)
 tokenizer = ToktokTokenizer()
 stopword_list = nltk.corpus.stopwords.words('english')
-stopword_list.remove('no')
-stopword_list.remove('not')
+new_stopwords = ["else", "dtype", "like", "name", "guy", "reddit", "delete", "selftext"]
+stopword_list.extend(new_stopwords)
 
 
 def strip_html_tags(text):
