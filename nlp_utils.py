@@ -20,7 +20,9 @@ stopword_list = nltk.corpus.stopwords.words('english')
 new_stopwords = ["else", "dtype", "like", 
                  "name", "guy", "reddit", 
                  "delete", "selftext", "subreddit",
-                 "remove", "get"]
+                 "remove", "get", "anyone", "everyone",
+                 "length", "mg", "much", "remove",
+                 "go", "time"]
 stopword_list.extend(new_stopwords)
 
 
