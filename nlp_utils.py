@@ -22,7 +22,8 @@ new_stopwords = ["else", "dtype", "like",
                  "delete", "selftext", "subreddit",
                  "remove", "get", "anyone", "everyone",
                  "length", "mg", "much", "remove",
-                 "go", "time"]
+                 "go", "time", "adhd", "hey", "hi",
+                 "hello", "object", "ti"]
 stopword_list.extend(new_stopwords)
 
 
