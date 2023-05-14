@@ -1,4 +1,4 @@
-# Analysis of Reddit posts about ADHD
+# Analysis of Reddit posts
 
 This project is a proof of a concept about Reddit posts analysis.
 The aim of this project is :
