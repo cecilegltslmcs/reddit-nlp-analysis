@@ -17,13 +17,13 @@ nlp = spacy.load('en_core_web_sm')
 #nlp_vec = spacy.load('en_vecs', parse = True, tag=True, #entity=True)
 tokenizer = ToktokTokenizer()
 stopword_list = nltk.corpus.stopwords.words('english')
-new_stopwords = ["else", "dtype", "like", 
-                 "name", "guy", "reddit", 
-                 "delete", "selftext", "subreddit",
-                 "remove", "get", "anyone", "everyone",
-                 "length", "mg", "much", "remove",
-                 "go", "time", "adhd", "hey", "hi",
-                 "hello", "object", "ti"]
+new_stopwords = ["autistic", "autism", "title", 
+                 "text", "subreddit", "dtype",
+                 "length" "thread", "object",
+                 "Name", "asd", "disorder", "spectrum",
+                 "megathread", "syndrome", "falsely", "sub",
+                 "c", "get", "tell", "find", "dae", "anyone",
+                 "like", "feel", "go", "know", "else", "still"]
 stopword_list.extend(new_stopwords)
 
 
