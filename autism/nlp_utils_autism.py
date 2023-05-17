@@ -23,7 +23,9 @@ new_stopwords = ["autistic", "autism", "title",
                  "Name", "asd", "disorder", "spectrum",
                  "megathread", "syndrome", "falsely", "sub",
                  "c", "get", "tell", "find", "dae", "anyone",
-                 "like", "feel", "go", "know", "else", "still"]
+                 "like", "feel", "go", "know", "else", "still",
+                 "something", "could", "people", "way", "question",
+                 "thing", "please", "bc"]
 stopword_list.extend(new_stopwords)
 
 
