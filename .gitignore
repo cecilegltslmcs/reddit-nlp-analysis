@@ -2,3 +2,4 @@ data/
 .venv/
 myenv/
 __pycache__/
+authentification_token.py
