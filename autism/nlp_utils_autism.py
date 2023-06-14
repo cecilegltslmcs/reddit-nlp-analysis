@@ -9,6 +9,7 @@ import unicodedata
 import seaborn as sns
 import matplotlib.pyplot as plt
 from contractions_map import CONTRACTION_MAP
+from sklearn.metrics import accuracy_score, f1_score, hamming_loss
 
 """Functions are found in this article 
 https://towardsdatascience.com/a-practitioners-guide-to-natural-language-processing-part-i-processing-understanding-text-9f4abfd13e72"""
@@ -25,7 +26,8 @@ new_stopwords = ["autistic", "autism", "title",
                  "c", "get", "tell", "find", "dae", "anyone",
                  "like", "feel", "go", "know", "else", "still",
                  "something", "could", "people", "way", "question",
-                 "thing", "please", "bc", "someone", "make"]
+                 "thing", "please", "bc", "someone", "make", "nan",
+                 "reddit", "com", "httpswww"]
 stopword_list.extend(new_stopwords)
 
 
@@ -151,3 +153,13 @@ def plot_top_words(model, feature_names, n_top_words, title):
 
     plt.subplots_adjust(top=0.90, bottom=0.05, wspace=0.90, hspace=0.3)
     plt.show()
+
+#########################################
+###############METRICS###################
+#########################################
+
+def print_score(y_test, y_pred):
+    print("Hamming loss (Misclassification Ratio): {}".format(hamming_loss(y_test, y_pred)))
+    print("Label-Based Accuracy: {}".format(hamming_score(y_test, y_pred)))
+    print('Subset Accuracy: ', accuracy_score(y_test, y_pred, normalize=True, sample_weight=None))
+    print('F1-score Micro: ', f1_score(y_test, y_pred, average='micro'))
