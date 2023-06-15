@@ -158,6 +158,25 @@ def plot_top_words(model, feature_names, n_top_words, title):
 ###############METRICS###################
 #########################################
 
+def print_evaluation_scores(y_test, predicted):
+    print('Subset Accuracy: ', accuracy_score(y_test, predicted, normalize=True, sample_weight=None))
+    print('Hamming Loss (Misclassification Ratio): ', hamming_loss(y_test, predicted))
+    print('F1-score Micro: ', f1_score(y_test, predicted, average='micro'))
+    print("F1-Score Macro: ", f1_score(y_test, predicted, average="macro"))
+
+def hamming_score(y_test, y_pred, normalize=True, sample_weight=None):
+    acc_list = []
+    for i in range(y_test.shape[0]):
+        set_true = set( np.where(y_test[i])[0] )
+        set_pred = set( np.where(y_pred[i])[0] )
+        tmp_a = None
+        if len(set_true) == 0 and len(set_pred) == 0:
+            tmp_a = 1
+        else:
+            tmp_a = len(set_true.intersection(set_pred))/float(len(set_true.union(set_pred)))
+        acc_list.append(tmp_a)
+    return np.mean(acc_list)
+
 def print_score(y_test, y_pred):
     print("Hamming loss (Misclassification Ratio): {}".format(hamming_loss(y_test, y_pred)))
     print("Label-Based Accuracy: {}".format(hamming_score(y_test, y_pred)))
