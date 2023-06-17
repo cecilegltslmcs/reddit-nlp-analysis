@@ -26,9 +26,14 @@ Here some illustrations coming from the textual analysis and the labelling of th
 
 **Examples of illustration :**
 
-![Alt text](image-1.png)
+*Top 30 after TF-IDF*
+![Alt text](illustration/image-1.png)
 
-![Alt text](image.png)
+*Repartition of the 6 topics*
+![Alt text](illustration/image.png)
+
+*ML Flow UI with Random Forest Classifier*
+![Alt text](illustration/mlflow-ui.png)
 
 ## Credit
 
