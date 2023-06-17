@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import unicodedata
 import seaborn as sns
 import matplotlib.pyplot as plt
-from contractions_map import CONTRACTION_MAP
+from utils.contractions_map import CONTRACTION_MAP
 from sklearn.metrics import accuracy_score, f1_score, hamming_loss
 
 """Functions are found in this article 
