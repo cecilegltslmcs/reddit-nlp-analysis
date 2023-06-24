@@ -1,6 +1,6 @@
 # Classification of Reddit posts about Autism
 
-* Last Update: 17th June 2023 *
+*Last Update: 24th June 2023*
 
 ## Tables of contents 
 
@@ -31,7 +31,7 @@ Here some illustrations coming from the textual analysis and the labelling of th
 *Top 30 after TF-IDF*
 ![Alt text](illustration/image-1.png)
 
-*Repartition of the 6 topics*
+*Repartition of the topics*
 ![Alt text](illustration/image.png)
 
 *ML Flow UI with Random Forest Classifier*
