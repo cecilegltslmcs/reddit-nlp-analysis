@@ -1,6 +1,6 @@
 # Classification of Reddit posts about Autism
 
-*Last Update: 20h July 2023*
+*Last Update: 21th July 2023*
 
 ## Tables of contents 
 
@@ -36,6 +36,11 @@ Here some illustrations coming from the textual analysis and the labelling of th
 
 *ML Flow UI with Random Forest Classifier*
 ![Alt text](illustration/mlflow-ui.png)
+
+## Serving models
+
+The method to served the models is described in the file "serving_command.sh". 
+To use MlFlow serving's service, pyenv is mandatory. 
 
 ## Credit
 
