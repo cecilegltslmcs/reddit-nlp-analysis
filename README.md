@@ -1,6 +1,6 @@
 # Classification of Reddit posts about Autism
 
-*Last Update: 24th June 2023*
+*Last Update: 20h July 2023*
 
 ## Tables of contents 
 
