@@ -2,4 +2,4 @@
 mlflow server --backend-store-uri sqlite:///mlflow.db
 
 # Serving model via API
-mlflow models serve -m mlruns/1/7ed107530cb24d7a9b9b9d00096116fc/artifacts/model -h 0.0.0.0 -p 8001
+mlflow models serve -m mlruns/1/d2893ac085204f6c8f06ecb98f50d72f/artifacts/model -h 0.0.0.0 -p 8001

@@ -1,7 +1,6 @@
 data/
-.venv/
 myenv/
 __pycache__/
-authentification_token.py
+.env
 mlflow.db
 mlruns
